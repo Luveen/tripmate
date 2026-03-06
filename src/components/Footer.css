@@ -1,0 +1,62 @@
+.footer-agency {
+  background-color: #0c1221;
+  /* Match the site's dark theme */
+  border-radius: 40px 40px 0 0;
+  margin-top: 5rem;
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
+
+.subscription-box {
+  border-radius: 50px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.subscription-box:focus-within {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.subscription-box input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.btn-white {
+  background: white;
+  color: black;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-white:hover {
+  background: #f8f9fa;
+  transform: scale(1.05);
+}
+
+.hover-opacity-100:hover {
+  opacity: 1 !important;
+  color: #ff6600 !important;
+  transition: all 0.3s ease;
+}
+
+.social-pill {
+  transition: all 0.3s ease;
+}
+
+.social-pill:hover {
+  transform: translateY(-5px) scale(1.1);
+  background: #ff6600 !important;
+  color: white !important;
+}
+
+.brand-dot-line {
+  border-radius: 2px;
+}
+
+/* Custom Scroll Handling if footer is fixed later */
+@media (max-width: 991px) {
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+}

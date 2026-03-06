@@ -1,0 +1,91 @@
+/* Navbar.css */
+
+.navbar-custom {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+    z-index: 1050;
+}
+
+.navbar-scrolled {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.nav-pill-container {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 6px 10px;
+    border-radius: 100px;
+}
+
+.nav-link-pill {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    padding: 10px 24px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.nav-link-pill:hover {
+    color: #fff;
+}
+
+.nav-link-pill.active {
+    background: #fff;
+    color: #000 !important;
+    font-weight: 600;
+}
+
+.btn-primary-nav {
+    background: linear-gradient(135deg, #ff7707 0%, #ff6600 100%);
+    color: #000;
+    border: none;
+    padding: 6px 6px 6px 20px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+}
+
+.btn-primary-nav:hover {
+    box-shadow: 0 8px 25px rgba(255, 102, 0, 0.5);
+    transform: translateY(-2px);
+}
+
+.navbar-cta .arrow-circle {
+    width: 32px;
+    height: 32px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+}
+
+.btn-primary-nav:hover .arrow-circle {
+    transform: rotate(45deg);
+    background: #fff;
+    color: #000;
+}
+
+/* Glassmorphism utility if not already present in main styles */
+.glass-morphism {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 991px) {
+    .nav-pill-container {
+        display: none;
+        /* Hide for now, or implement mobile toggle later */
+    }
+}

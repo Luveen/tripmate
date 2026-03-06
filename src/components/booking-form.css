@@ -1,0 +1,73 @@
+.booking-form {
+  background-color: transparent !important;
+  max-width: 1000px;
+}
+
+
+
+.destination-select {
+  border-radius: 8px;
+  height: 40px;
+  width: 260px;
+}
+
+.booking-form {
+  margin-top: -80px;
+  position: relative;
+  z-index: 1100 !important;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  max-width: 1400px;
+  /* Match site width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.booking-form:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.3) !important;
+}
+
+.react-select__control {
+  border-radius: 12px !important;
+  border: none !important;
+  padding: 5px 10px !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
+}
+
+.react-select__placeholder {
+  color: #999 !important;
+  font-weight: 500;
+}
+
+.form-control {
+  border-radius: 12px !important;
+  font-size: 0.95rem !important;
+}
+
+.btn-warning {
+  background-color: #ff6600;
+  border: none;
+  padding: 10px 20px;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2px;
+}
+
+.fw-black {
+  font-weight: 950;
+}
+
+/* DatePicker customization */
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .booking-form {
+    margin-top: 2rem;
+    padding: 2rem !important;
+  }
+}

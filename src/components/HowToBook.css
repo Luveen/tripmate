@@ -1,0 +1,98 @@
+.how-to-book {
+    background: #ffffff !important;
+    color: #000000;
+}
+
+.how-to-book .main-title {
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+
+.how-to-book .letter-spacing-1 {
+    letter-spacing: 1px;
+}
+
+/* Ribbon Marquee Animation */
+.ribbon-container {
+    white-space: nowrap;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.ribbon-content {
+    display: inline-flex;
+    animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Steps Grid Styling */
+.how-to-book .border-end {
+    border-right: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.how-to-book .border-bottom {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.step-number {
+    color: #000000;
+    opacity: 0.9;
+}
+
+.how-to-book p.text-muted {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Button Styling */
+.btn-book-outline {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: #000000;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.btn-book-outline:hover {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.arrow-circle {
+    width: 40px;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.btn-book-outline:hover .arrow-circle {
+    transform: rotate(45deg);
+    background: #ff6600;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .how-to-book .border-end {
+        border-right: none !important;
+    }
+
+    .how-to-book .border-bottom {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .how-to-book .col-lg-4 {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+    }
+}

@@ -1,0 +1,123 @@
+/* body.css */
+body {
+  font-family: 'Instrument Sans', sans-serif;
+}
+
+.white-box {
+  background: white;
+  padding: 40px;
+  border-radius: 40px;
+}
+
+/* Lucid Adventure Section Redesign */
+.lucid-stats-container {
+  min-height: auto;
+  padding: 4rem 0;
+  position: relative;
+  background-color: transparent;
+  color: #1a1a1a !important;
+  font-family: 'Inter', sans-serif;
+}
+
+.lucid-overlay {
+  backdrop-filter: blur(12px);
+  background: transparent;
+}
+
+.map-text {
+  /* text-shadow removed for light theme cleanliness */
+  letter-spacing: 0.5px;
+}
+
+.main-title {
+  font-weight: 950;
+  letter-spacing: -3px;
+  font-size: clamp(3rem, 10vw, 8rem);
+  line-height: 0.9;
+  color: #000;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2px;
+}
+
+.glow-dot {
+  filter: drop-shadow(0 0 8px #ff6600);
+}
+
+/* Adventure Section Redesign */
+.adventure-stats-container {
+  min-height: 85vh;
+  width: 100%;
+  margin-top: 6rem;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.25)), url('https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.adventure-content {
+  padding: 2rem;
+}
+
+.adventure-title {
+  font-size: clamp(3.5rem, 12vw, 9rem);
+  letter-spacing: -2px;
+  margin-bottom: 4rem !important;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.stats-grid {
+  margin-top: 2rem;
+}
+
+.stat-item {
+  padding: 0 2rem;
+}
+
+.stat-val {
+  color: #ff6600 !important;
+  font-size: clamp(3rem, 8vw, 7.5rem) !important;
+  line-height: 1;
+  margin-bottom: 0.2rem !important;
+  font-weight: 800 !important;
+}
+
+.stat-desc {
+  font-size: clamp(1.1rem, 2.5vw, 1.8rem);
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 500;
+}
+
+.map-label {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+@media (max-width: 991px) {
+  .stats-grid {
+    gap: 3rem !important;
+  }
+
+  .adventure-stats-container {
+    min-height: auto;
+    padding: 5rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    flex-direction: column;
+    gap: 4rem !important;
+  }
+
+}
