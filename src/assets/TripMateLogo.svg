@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="80" viewBox="0 0 300 80">
+  <rect width="300" height="80" rx="10" fill="#0d1117"/>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="48" letter-spacing="-2">
+    <tspan fill="#ffffff">Trip</tspan><tspan fill="#ff6600">Mate</tspan>
+  </text>
+</svg>
