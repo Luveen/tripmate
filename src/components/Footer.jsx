@@ -4,92 +4,67 @@ import './Footer.css';
 
 function Footer() {
     return (
-        <footer className="footer-agency pt-5 pb-4">
-            <div className="container">
-                {/* Tier 1: CTA Section */}
-                <div className="cta-section row align-items-center mb-5 pb-5 border-bottom border-white border-opacity-10">
-                    <div className="col-lg-7 mb-4 mb-lg-0">
-                        <h2 className="display-5 fw-bold text-white mb-2">Book Your Tour Today!</h2>
-                        <p className="lead text-white opacity-50 mb-0">Join us for an unforgettable Sri Lankan adventure and discover the beauty of the island.</p>
-                    </div>
-                    <div className="col-lg-5">
-                        <div className="subscription-box pill-shape d-flex align-items-center p-1 bg-white bg-opacity-10 border border-white border-opacity-10">
-                            <input
-                                type="email"
-                                placeholder="Enter your email"
-                                className="form-control bg-transparent border-0 text-white flex-grow-1 px-4"
-                            />
-                            <button className="btn btn-white rounded-pill px-4 py-2 fw-bold shadow-sm">Subscribe</button>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Tier 2: Navigation Grid */}
-                <div className="row mb-5">
-                    <div className="col-lg-4 mb-5 mb-lg-0">
-                        <div className="footer-brand mb-4">
-                            <h3 className="fw-bold text-white mb-0" style={{ letterSpacing: '-1px' }}>
-                                Trip<span style={{ color: '#ff6600' }}>Mate</span>
-                            </h3>
-                            <div className="brand-dot-line mt-2" style={{ width: '40px', h: '3px', background: '#ff6600' }}></div>
-                        </div>
-                        <p className="text-white opacity-50 pe-lg-5 mb-4">
-                            Discover the awe-inspiring beauty of Sri Lanka with our exclusive curated tours. Witness the breathtaking sunrise from the summit, embark on thrilling Jeep adventures, and immerse yourself in the rich local culture.
+        <footer className="footer-premium bg-white position-relative mt-5 pt-3">
+            {/* Top decorative gradient line */}
+            <div className="footer-deco-line"></div>
+            
+            <div className="container pt-5 pb-4">
+                <div className="row align-items-center mb-5">
+                    {/* Left Brand */}
+                    <div className="col-lg-5 mb-5 mb-lg-0 text-center text-lg-start">
+                        <h2 className="display-4 fw-black mb-1" style={{ letterSpacing: '-2px' }}>
+                            Trip<span style={{ color: 'var(--brand-primary)' }}>Mate</span>
+                        </h2>
+                        <p className="text-muted fw-bold letter-spacing-2 mb-0 small text-uppercase">
+                            Connecting People · Sri Lanka
                         </p>
-                        <a href="#about" className="text-white text-decoration-none fw-bold d-flex align-items-center">
-                            More About us <i className="bi bi-arrow-up-right ms-2 fs-6"></i>
-                        </a>
                     </div>
 
-                    <div className="col-lg-8">
-                        <div className="row">
-                            <div className="col-md-4 col-12 mb-4 mb-md-0">
-                                <h6 className="text-white fw-bold mb-4">Navigation</h6>
-                                <nav className="d-flex flex-column gap-3">
-                                    <Link to="/" className="text-white opacity-50 text-decoration-none hover-opacity-100">Home</Link>
-                                    <Link to="/destinations" className="text-white opacity-50 text-decoration-none hover-opacity-100">Destinations</Link>
-                                    <Link to="/tour-details" className="text-white opacity-50 text-decoration-none hover-opacity-100">Book a Trip</Link>
-                                    <a href="/#gallery" className="text-white opacity-50 text-decoration-none hover-opacity-100">Experiences</a>
-                                    <a href="/#why-tripmate" className="text-white opacity-50 text-decoration-none hover-opacity-100">Why TripMate</a>
-                                </nav>
+                    {/* Right Quick Links & Contact */}
+                    <div className="col-lg-7">
+                        <div className="d-flex flex-wrap justify-content-center justify-content-lg-end gap-5">
+                            <div className="d-flex flex-column gap-3 text-center text-lg-start">
+                                <h6 className="fw-black text-dark text-uppercase letter-spacing-1 mb-2">Explore</h6>
+                                <Link to="/" className="footer-link">Home</Link>
+                                <Link to="/destinations" className="footer-link">Destinations</Link>
+                                <Link to="/tour-details" className="footer-link">Book a Trip</Link>
                             </div>
-                            <div className="col-md-4 col-6">
-                                <h6 className="text-white fw-bold mb-4">Contact Us</h6>
-                                <div className="d-flex flex-column gap-3 text-white opacity-50 small">
-                                    <span>+94 123 456 7890</span>
-                                    <span>info@tripmate.lk</span>
-                                    <div className="mt-4">
-                                        <h6 className="text-white fw-bold mb-2">Location</h6>
-                                        <span>TripMate Adventures Sri Lanka<br />Jl. Colombo No. 123<br />Colombo, Western Province</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-6">
-                                <h6 className="text-white fw-bold mb-4">Company & Legals</h6>
-                                <nav className="d-flex flex-column gap-3 text-white opacity-50 small">
-                                    <a href="#" className="text-white text-decoration-none hover-opacity-100">About Us</a>
-                                    <a href="#" className="text-white text-decoration-none hover-opacity-100">Frequently Ask Question</a>
-                                    <a href="#" className="text-white text-decoration-none hover-opacity-100">Term of Services</a>
-                                    <a href="#" className="text-white text-decoration-none hover-opacity-100">License</a>
-                                </nav>
+                            
+                            <div className="d-flex flex-column gap-3 text-center text-lg-start">
+                                <h6 className="fw-black text-dark text-uppercase letter-spacing-1 mb-2">Contact Sabi</h6>
+                                <a href="tel:+94770562642" className="footer-link d-flex align-items-center justify-content-center justify-content-lg-start gap-2">
+                                    <div className="icon-wrapper"><i className="bi bi-telephone-fill"></i></div> +94 77 056 2642
+                                </a>
+                                <a href="mailto:sabithan.shaggy@gmail.com" className="footer-link d-flex align-items-center justify-content-center justify-content-lg-start gap-2">
+                                    <div className="icon-wrapper"><i className="bi bi-envelope-at-fill"></i></div> sabithan.shaggy@gmail.com
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                {/* Tier 3: Bottom Bar */}
-                <div className="row align-items-center pt-5 border-top border-white border-opacity-10">
-                    <div className="col-md-6 mb-4 mb-md-0">
-                        <div className="social-links d-flex gap-2">
-                            {['facebook', 'instagram', 'twitter-x', 'linkedin', 'youtube'].map((social) => (
-                                <a key={social} href="#" className="social-pill d-flex align-items-center justify-content-center rounded-circle bg-white text-dark text-decoration-none shadow-sm" style={{ width: '40px', height: '40px' }}>
-                                    <i className={`bi bi-${social}`}></i>
-                                </a>
-                            ))}
-                        </div>
+                {/* Divider */}
+                <div className="footer-divider my-5"></div>
+
+                {/* Bottom Row */}
+                <div className="row align-items-center">
+                    <div className="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                        <p className="text-muted small fw-bold mb-0 letter-spacing-1">
+                            &copy; {new Date().getFullYear()} TRIPMATE SRI LANKA. ALL RIGHTS RESERVED.
+                        </p>
                     </div>
-                    <div className="col-md-6 text-md-end text-white opacity-25 small">
-                        <span>&copy; {new Date().getFullYear()} TripMate Sri Lanka. All Rights Reserved</span>
+                    <div className="col-md-6 text-center text-md-end">
+                        <div className="d-flex justify-content-center justify-content-md-end gap-3">
+                            <a href="https://www.instagram.com/love_srilanka_94/" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="Instagram">
+                                <i className="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/94770562642" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="WhatsApp">
+                                <i className="bi bi-whatsapp"></i>
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="Facebook">
+                                <i className="bi bi-facebook"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

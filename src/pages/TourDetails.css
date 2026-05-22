@@ -5,6 +5,7 @@
 .tour-hero-section {
     height: 70vh;
     min-height: 500px;
+    margin-bottom: 2rem;
 }
 
 .hero-img-container {
@@ -109,6 +110,29 @@
 .react-datepicker__input-container input {
     font-size: 1rem !important;
     color: #000 !important;
+}
+
+/* Custom Checkboxes */
+.custom-checkbox .form-check-input:checked {
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+}
+
+.custom-checkbox .form-check-input {
+    width: 1.25em;
+    height: 1.25em;
+    margin-top: 0.15em;
+}
+
+/* Remove up/down arrows from number input */
+.remove-arrow::-webkit-outer-spin-button,
+.remove-arrow::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.remove-arrow {
+    -moz-appearance: textfield;
 }
 
 @media (max-width: 991px) {

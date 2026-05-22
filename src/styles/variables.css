@@ -1,0 +1,8 @@
+:root {
+  /* Colors extracted from TripMate logo */
+  --brand-primary: #ff6600;   /* orange accent from logo */
+  --brand-secondary: #ffffff; /* white text colour */
+  --brand-accent: #0d1117;   /* dark background colour */
+  --brand-bg: #0d1117;       /* background for dark sections */
+  --brand-text: #ffffff;     /* default text colour */
+}

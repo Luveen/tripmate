@@ -3,7 +3,9 @@
   max-width: 1000px;
 }
 
-
+.booking-form-bg {
+  background-color: rgba(30, 30, 30, 0.95) !important; /* Dark opaque background instead of expensive blur */
+}
 
 .destination-select {
   border-radius: 8px;
@@ -15,7 +17,7 @@
   margin-top: -80px;
   position: relative;
   z-index: 1100 !important;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
   max-width: 1400px;
   /* Match site width */
   margin-left: auto;
@@ -70,4 +72,28 @@
     margin-top: 2rem;
     padding: 2rem !important;
   }
+}
+
+.btn-contact {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-contact:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(255, 102, 0, 0.5);
+}
+
+.btn-contact:active {
+  transform: scale(0.95);
+}
+
+/* Remove up/down arrows from number input for faster typing */
+.booking-form input[type="number"]::-webkit-outer-spin-button,
+.booking-form input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.booking-form input[type="number"] {
+  -moz-appearance: textfield;
 }

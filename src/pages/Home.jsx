@@ -1,6 +1,5 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import BookingForm from '../components/BookingForm';
 import PopularDestinations from '../components/PopularDestinations';
 import HowToBook from '../components/HowToBook';
 import Gallery from '../components/Gallery';
@@ -12,8 +11,6 @@ function Home() {
     return (
         <>
             <Hero />
-            <BookingForm />
-            <SketchDivider />
             <PopularDestinations />
             <HowToBook />
             <Gallery />
